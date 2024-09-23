@@ -1,53 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const formDisciplina = document.getElementById('form-disciplina');
+    const formAluno = document.getElementById('form-aluno');
+    const formCurso = document.getElementById('form-curso');
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
+    formDisciplina.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Disciplina cadastrada com sucesso!');
+        // Aqui você pode adicionar lógica para salvar os dados
+    });
 
-section {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    formAluno.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Aluno cadastrado com sucesso!');
+        // Aqui você pode adicionar lógica para salvar os dados
+    });
 
-h2 {
-    margin-top: 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-}
-
-input, textarea, select {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
+    formCurso.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Curso cadastrado com sucesso!');
+        // Aqui você pode adicionar lógica para salvar os dados
+    });
+});
